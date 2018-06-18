@@ -1,2 +1,2 @@
 # linux - Shell Scripting
-Workarounds of the commands 
+workaround of all linux commands for easy access  
