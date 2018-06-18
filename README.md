@@ -1,2 +1,2 @@
-# linux
-# All my linux works shall be displayed here.
+# linux - Shell Scripting
+Workarounds of the commands 
