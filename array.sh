@@ -14,7 +14,6 @@ echo "arg3 :$3"
 ARGS=( "$*" )           # Will parse the entire $1,$2,$3,....$n into a single element in array; like ARGS[0] will have all $1,$2...etc
 
 echo "Printing ARGS array"
-
 echo "ARGS ARRAY CONTENT : ${ARGS[*]}"    # -> ${ARGS[@]}  works fine too!
 
 echo "ARGS[0]: ${ARGS[0]}"
