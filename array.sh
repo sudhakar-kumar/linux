@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 #Working with Command-Line-Arguments and Arrays
 #PURPOSE - To store the command line arg(s) into an array and print it like an array. 
