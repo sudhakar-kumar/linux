@@ -2,7 +2,15 @@ To find the biggest file/directory interms of SIZE
 
 du -a | sort -nr | head -n3
  
-  du -a       => Check the size of all files/directories in current pwd. 
+  du -a       => Check the size of all files/directories in current PWD. 
   sort -nr    => Sort in numeric order 
   head -n3    => print first 3 lines
+  
+
+Incase if ONLY FILES with maximum sizes are required 
+
+du -hs * | sort -hr
+  
+  du -hs *    => Check the size of each file in human-readable format(kb,mb,gb etc) and summarize(simplify) only those for all files in current PWD.
+  sort -hr    => Sort in human-readable format(kb,mb,gb etc) in REVERSE Order (Largest file will be the first and smallest file at the bottom.
   
