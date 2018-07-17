@@ -1,0 +1,8 @@
+To find the biggest file/directory interms of SIZE
+
+du -a | sort -nr | head -n3
+ 
+  du -a       => Check the size of all files/directories in current pwd. 
+  sort -nr    => Sort in numeric order 
+  head -n3    => print first 3 lines
+  
