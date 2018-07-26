@@ -14,3 +14,11 @@ du -hs * | sort -hr
   du -hs *    => Check the size of each file in human-readable format(kb,mb,gb etc) and summarize(simplify) only those files in current PWD.
   sort -hr    => Sort in human-readable format(kb,mb,gb etc) in REVERSE Order (Largest file will be the first and smallest file at the bottom.
   
+
+
+***********************************************************************
+*             CHANGE FILE EXTENSION RECURSIVELY                       *
+***********************************************************************
+
+find . -type f -iname "*.f95" | xargs -t rename ".f95" ".f" --verbose
+
