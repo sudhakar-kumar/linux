@@ -1,4 +1,6 @@
-To find the biggest file/directory interms of SIZE
+************************************************
+*             LARGE FILE/DIR INTERMS OF SIZE   * 
+************************************************
 
 du -a | sort -nr | head -n3
  
@@ -22,3 +24,5 @@ du -hs * | sort -hr
 
 find . -type f -iname "*.f95" | xargs -t rename ".f95" ".f" --verbose
 
+        -t   =>  verbose for xargs
+ 
