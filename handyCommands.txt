@@ -26,3 +26,10 @@ find . -type f -iname "*.f95" | xargs -t rename ".f95" ".f" --verbose
 
         -t   =>  verbose for xargs
  
+***********************************************************************
+*            MOVE/COPY TO A SPECIFIC DIR AFTER FIND                   *            
+***********************************************************************
+
+find . -type f -iname "*.txt" | xargs -t -I{} mv  {} copyhere/
+
+find . -type f -iname "*.doc" | xargs -t -I{} cp  {} copyhere/
