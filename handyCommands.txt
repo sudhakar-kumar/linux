@@ -33,3 +33,16 @@ find . -type f -iname "*.f95" | xargs -t rename ".f95" ".f" --verbose
 find . -type f -iname "*.txt" | xargs -t -I{} mv  {} copyhere/
 
 find . -type f -iname "*.doc" | xargs -t -I{} cp  {} copyhere/
+
+
+//Workaround
+************
+Both the below commands will have same results.
+
+
+1. find . -type f -iname "*.txt" | xargs -t ls -l
+
+2. find . -type f -iname "*.txt" -exec ls -l {} +
+
+
+But 'xargs' is recommended for peformance.
